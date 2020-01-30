@@ -1,5 +1,5 @@
 # DDOS-Scrapp
-Scripts para saltarse bloqueo de Cloudflare
+Scripts para saltarse bloqueo de Cloudflare <br>
 Requerimientos:
 - Python [3]
 - Pip [3]
