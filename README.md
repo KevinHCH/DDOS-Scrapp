@@ -4,8 +4,10 @@ Requerimientos:
 - Python [3]
 - Pip [3]
 ## Pasos a seguir
-- Ejecutar el script `deploy.sh`
+- Ejecutar el script `deploy.sh` **Ejecutar este script como ROOT**
 	- Si aparece error en consola es necesario usar versiones de Python3 y pip3
+	- En máquinas CENTOS 7 aparece Error de OpenSSL, significa que es una version antigua de python, es solo una advertencia
+**El resto de archivos no es necesario ejecutarlos como ROOT, es mejor cambiar el usuario**
 - Ejecutar `index.py`, admite pasarle la URL de la pagina objetivo por parámetro en la invocación del script o el propio script pedirá una URL por consola
 	- Ejemplo: `python index.py https://example.es`
 	El script creará una archivo con todo el contenido HTML que haya conseguido de la página objetivo
