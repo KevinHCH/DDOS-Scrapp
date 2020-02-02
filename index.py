@@ -15,6 +15,9 @@ def scan_write_file(url, file_name):
 
 # MAIN
 file_name = "HTMLContent"
+if len(sys.argv) == 3:
+  file_name=sys.argv[2]
+
 
 if len(sys.argv) > 1:
   local_url = sys.argv[1]

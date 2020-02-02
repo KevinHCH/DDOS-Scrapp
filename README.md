@@ -6,13 +6,13 @@ Requerimientos:
 ## Pasos a seguir
 - Ejecutar el script `deploy.sh` **Ejecutar este script como ROOT**
 	- Si aparece error en consola es necesario usar versiones de Python3 y pip3
-	- En máquinas CENTOS 7 aparece Error de OpenSSL, significa que es una version antigua de python, es solo una advertencia
+	- En máquinas CENTOS 7 aparece Error de OpenSSL, significa que es una version antigua de python, es solo una advertencia <br>
 **El resto de archivos no es necesario ejecutarlos como ROOT, es mejor cambiar el usuario**
-- Ejecutar `index.py`, admite pasarle la URL de la pagina objetivo por parámetro en la invocación del script o el propio script pedirá una URL por consola
-	- Ejemplo: `python index.py https://example.es`
+- Ejecutar `index.py`, admite pasarle la URL de la pagina objetivo  + el nombre que se creara y en el que se escribirá el contenido HTML (el nombre es opcional)por parámetro en la invocación del script o el propio script pedirá una URL por consola
+	- Ejemplo: `python index.py https://example.es <mi_archivo>`
 	El script creará una archivo con todo el contenido HTML que haya conseguido de la página objetivo
-- Ejecutar script `getElementsByTagName.py`, en la llamada de este script **es necesario** pasarle el nombre de una etiqueta HTML
-	- Ejemplo: `python getElementsByTagName.py img` (Buscará en el archivo HTML previamente creado con el script anterior y buscara todas las etiquetas img, y creará un archivo `JSON` con los datos obtenidos)
+- Ejecutar script `getElementsByTagName.py`, en la llamada de este script **es necesario** pasarle **primero el nombre del archivo(sólo el nombre, NO hace falta la extension)** y **el nombre de la etiqueta HTML** que se va a buscar en el archivo prviamente creado 
+	- Ejemplo: `python getElementsByTagName.py HTMLContent img` (Buscará en el archivo HTML previamente creado con el script anterior y buscara todas las etiquetas img, y creará un archivo `JSON` con los datos obtenidos)
 
 Todos estos scripts son modificables en función de lo que se quiera obtener
 ### Links DOC oficiales
